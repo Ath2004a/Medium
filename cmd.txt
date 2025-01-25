@@ -1,0 +1,7 @@
+npx prisma studio                     // To see the output in the website.
+
+schema.prisma (the file)              // Is used to create the models of the database.
+
+npx prisma migrate dev --name init    // To create the migration of the code.
+
+npx prisma init                       // To create the schema.prisma * file *

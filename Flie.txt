@@ -1,0 +1,40 @@
+$ Using (hono) lib in Medium => backend.
+
+$ Will have 5 routers.
+1. Sign up
+2. Sign in
+3. Update
+4. Delete 
+5. GET the block
+
+$ Connect the connection-pool and database through (Connection-string).
+
+$ Create the prisma Schema User & Post.
+
+$ Migrate the prisma Schema.
+
+$ npx prisma generate --no-engine (generate the client)
+
+$ npm install @prisma/extension-accelerate (generate the @prisma/extension-accelerate)
+
+$ /*const app = new Hono<{
+  $  Bindings:{
+  $    DATABASE_URL: string
+  $  }
+  $}>(); */   
+
+  $ => The problem was creating with that the database URL because it was not a string. So we have to convert this in the string like this ^^
+
+$ Then we made a folder called route which contains A blog routes and user routes.
+    => In blog routes, all the blog routes are available such as.Update, delete and finding a data.
+    => In user router all the user routers such as sign-in & up.
+
+$ Then we created the middleware in a blog router file. Where we can do the authentication
+    => using header
+    => JWT also
+
+$ In the middle where we use the set() and get().
+
+$ Then we create a zod validation. But the problem occurs that we cannot use it in the front end. So we created a common folder where we can use one packet as well as front end.
+
+$ https://www.npmjs.com/package/@asc2812/medium-commom?activeTab=code
